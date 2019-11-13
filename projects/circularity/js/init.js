@@ -49,20 +49,20 @@ var init = function (window) {
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
             
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            if ( circle.x > canvas.width ) {
-                circle.x = 0;
+            if ( circle. x > canvas.width ) {
+                circle. x = 0;
             } 
             // TODO 5a) if the circle has gone past of the LEFT side of the screen then place it on the RIGHT
-            else if ( / * Fill me in! * / ) {
-                
+            else if ( circle. x < 0) {
+                   
             } 
 
             // TODO 5b) if the circle has gone past of the TOP side of the screen then place it on the BOTTOM
-            if ( / * Fill me in! * / ) {
+            if (circle. y < 0) {
                 
             }
             // TODO 5c) if the circle has gone past of the BOTTOM side of the screen then place it OFF-SCREEN TOP
-            else if ( / * Fill me in! * / ) {
+            else if (circle. y > canvas.height) {
             
             }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
@@ -70,10 +70,19 @@ var init = function (window) {
     
         function update() {
             // TODO 4 : Update the circle's position //
+                physikz.updatePosition(circles[0]);
+                physikz.updatePosition( /* Your Bracket Notation HERE */ );
+                physikz.updatePosition( /* Your Bracket Notation HERE */ );
+	            physikz.updatePosition( /* Your Bracket Notation HERE */ );
+	            physikz.updatePosition( /* Your Bracket Notation HERE */ );
 
-            
+
             // TODO 5 : Call game.checkCirclePosition on your circles.
-           
+                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
+                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
+                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
+                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
+                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
 
             // TODO 8 : Iterate over the array
            
