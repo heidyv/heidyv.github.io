@@ -37,7 +37,7 @@ var background = function (window) {
             // TODO: 2 - Part 2
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var shape = draw.rect (canvasWidth, groundY, ./'blue');
+            var shape = draw.rect (canvasWidth, groundY, 'blue');
             background.addChild(shape);
 
             // TODO: 3 - Add a moon and starfield
@@ -85,7 +85,7 @@ var background = function (window) {
             var groundY = ground.y;
             
             // TODO 4: Part 2 - Move the tree!
-            tree.x = tree.x + 1;
+            tree.x = tree.x -1;
             if(tree.x < -200) {
                 tree.x = canvasWidth;
             }
