@@ -34,11 +34,9 @@ var init = function (window) {
 
 
         // TODO 3 / 7 : Call the drawCircle function 
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
+        for (var i = 0; i < 100; i ++){
+            drawCircle();
+        }
 
 
     
@@ -54,7 +52,7 @@ var init = function (window) {
             } 
             // TODO 5a) if the circle has gone past of the LEFT side of the screen then place it on the RIGHT
             else if ( circle. x < 0) {
-                   
+                  
             } 
 
             // TODO 5b) if the circle has gone past of the TOP side of the screen then place it on the BOTTOM
@@ -71,21 +69,26 @@ var init = function (window) {
         function update() {
             // TODO 4 : Update the circle's position //
                 physikz.updatePosition(circles[0]);
-                physikz.updatePosition( /* Your Bracket Notation HERE */ );
-                physikz.updatePosition( /* Your Bracket Notation HERE */ );
-	            physikz.updatePosition( /* Your Bracket Notation HERE */ );
-	            physikz.updatePosition( /* Your Bracket Notation HERE */ );
+                physikz.updatePosition(circles[1]);
+                physikz.updatePosition(circles[2]);
+	            physikz.updatePosition(circles[3]);
+	            physikz.updatePosition(circles[4]);
 
 
             // TODO 5 : Call game.checkCirclePosition on your circles.
-                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
-                game.checkCirclePosition( /* Your Bracket Notation HERE */ );
+                game.checkCirclePosition(circles[0]);
+                game.checkCirclePosition(circles[1]);
+                game.checkCirclePosition(circles[2]);
+                game.checkCirclePosition(circles[3]);
+                game.checkCirclePosition(circles[4]);
 
             // TODO 8 : Iterate over the array
-           
+               for (var i = 0; i < circles.length; i++){
+                   var eachValue = circles[i];
+                   physikz.updatePosition(eachValue);
+                   physikz.updatePosition(eachValue);
+                   game.checkCirclePosition(eachValue);
+               }
 
         }
         
